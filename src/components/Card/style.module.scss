@@ -1,0 +1,21 @@
+.card {
+    width: calc(50% - 25px);
+    height: 100px;
+    background: #ff9203;
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 0 5px;
+    flex-wrap: wrap;
+    .icon {
+        width: 100%;
+        display: flex;
+        img {
+            margin: 0 auto;
+        }
+    }
+    .title {
+        margin: 10px 0 0 0;
+        color: #fff;
+    }
+}
