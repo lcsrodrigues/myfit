@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <div className={styles.header} onClick={(e) => eventHandler(e)}>
-            <span>MY FIT</span>
+            <span>MY FIT - EM CONSTRUÇÃO</span>
         </div>
     )
 }
