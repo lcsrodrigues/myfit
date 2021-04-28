@@ -1,4 +1,4 @@
-import Card from '../Card';
+import { Card } from '../Card';
 import styles from './style.module.scss';
 import { MyFitEnum, MyFitRouter } from '../../Enum';
 

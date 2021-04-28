@@ -4,10 +4,20 @@ import { useRouter } from 'next/router';
 type ICard = {
     title: string;
     iconName?: string;
-    routerPage?:string;
+    routerPage?: string;
 }
 
-export default function Card({ title, iconName, routerPage }: ICard) {
+type ICardExercicio = {
+    title: string;
+    description?: string;
+    image?: string;
+    repetition: string;
+    series: string;
+    id: Number;
+    userID?: Number;
+}
+
+function Card({ title, iconName, routerPage }: ICard) {
 
     const router = useRouter();
 
@@ -27,3 +37,33 @@ export default function Card({ title, iconName, routerPage }: ICard) {
         </div>
     )
 }
+
+function CardExercicio({ title, description, image, repetition, series, id, userID }: ICardExercicio) {
+
+    return (
+        <div className={styles.cardExercicio}>
+            {
+                <div className={styles.image}>
+                    <img src={""} />
+                </div>
+            }
+            <div className={styles.info}>
+                <div className={styles.title}>
+                    <span>{title}</span>
+                </div>
+                <div className={styles.repetition}>
+                    <span>{repetition}</span>
+                </div>
+                <div className={styles.description}>
+                    <span>{description}</span>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export {
+    Card,
+    CardExercicio
+}
+

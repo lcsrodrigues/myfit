@@ -19,3 +19,27 @@
         color: #fff;
     }
 }
+
+.cardExercicio{
+    width: calc(100% - 20px);
+    padding: 5px;
+    display: flex;
+    .image{
+        width: 30%;
+        height: 75px;
+        background-color: #ff9203;
+        margin: 0 10px 0 0;
+    }
+    .info{
+        width: 70%;
+        .title{
+            span{
+                font-size: 16px;
+            }
+        }
+        span{
+            color:#fff;
+            font-size: 12px;
+        }
+    }
+}
