@@ -1,7 +1,30 @@
-.containerExercicios{
+.filterSeries {
+    background-color: #dd4e40;
+    width: calc(100% - 10px);
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    .abaFilter {
+        border-radius: 10px;
+        margin: 5px;
+        background-color: #ff0000;
+        text-align: center;
+        cursor: pointer;
+        width: 60px;
+        height: 20px;
+        span {
+            font-size: 12px;
+            color:#fff;
+            font-weight: bold;
+        }
+    }
+}
+
+.containerExercicios {
     padding: 5px;
 }
 
-.h1{
+.h1 {
     color: #fff;
 }

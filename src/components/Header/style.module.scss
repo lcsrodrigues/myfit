@@ -1,14 +1,22 @@
-.header{
+.header {
     width: 100%;
     height: 50px;
-    background: #DD4E40;
+    background: #dd4e40;
     display: flex;
-    justify-content: center;
-    span{
+    justify-content: space-around;
+    span {
         text-align: center;
         margin: 10px 0 0 0;
         font-size: 26px;
         font-weight: bold;
-        color:#fff;
+        color: #fff;
+    }
+    .sideLeft {
+        margin: 10px 0 0 0;
+    }
+    .sideRight {
+        margin: 6px 0 0 0;
+        display: flex;
+        justify-content: space-around;
     }
 }
