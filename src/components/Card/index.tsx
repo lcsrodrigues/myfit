@@ -7,16 +7,6 @@ type ICard = {
     routerPage?: string;
 }
 
-type ICardExercicio = {
-    title: string;
-    description?: string;
-    image?: string;
-    repetition: string;
-    series: string;
-    id: Number;
-    userID?: Number;
-}
-
 function Card({ title, iconName, routerPage }: ICard) {
 
     const router = useRouter();
@@ -36,6 +26,16 @@ function Card({ title, iconName, routerPage }: ICard) {
             </div>
         </div>
     )
+}
+
+type ICardExercicio = {
+    title: string;
+    description?: string;
+    image?: string;
+    repetition: string;
+    series: string;
+    id: Number;
+    userID?: Number;
 }
 
 function CardExercicio({ title, description, image, repetition, series, id, userID }: ICardExercicio) {
@@ -62,8 +62,34 @@ function CardExercicio({ title, description, image, repetition, series, id, user
     )
 }
 
+type ICardRefeicao = {
+    title: string;
+    description?: string;
+    id: Number;
+    userID?: Number;
+    schedule: string;
+}
+
+function CardRefeicao({ title, description, schedule, id, userID }: ICardRefeicao) {
+
+    return (
+        <div className={styles.cardRefeicao}>
+            <div className={styles.info}>
+                <div className={styles.title}>
+                    <span>{title} | {schedule}</span>
+                </div>
+                <hr />
+                <div className={styles.description}>
+                    <span>{description}</span>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 export {
     Card,
-    CardExercicio
+    CardExercicio,
+    CardRefeicao
 }
 

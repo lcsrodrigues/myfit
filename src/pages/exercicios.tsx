@@ -33,11 +33,6 @@ export default function Exercicios() {
         <>
             <Header />
             <div className={styles.filterSeries}>
-                {
-                    listExercicios.map(exercicio => {
-                        console.log(exercicio.SERIE)
-                    })
-                }
                 <div className={styles.abaFilter} onClick={(e) => handleEvent(e)}><span>Serie A</span></div>
                 <div className={styles.abaFilter} onClick={(e) => handleEvent(e)}><span>Serie B</span></div>
                 <div className={styles.abaFilter} onClick={(e) => handleEvent(e)}><span>Serie C</span></div>
