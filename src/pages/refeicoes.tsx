@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import styles from '../../styles/exercicios.module.scss';
+import styles from '../../styles/refeicoes.module.scss';
 import { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { CardRefeicao } from '../components/Card';
@@ -26,7 +26,7 @@ export default function Refeicoes() {
     return (
         <>
             <Header />
-            <div className={styles.containerExercicios}>
+            <div className={styles.containerRefeicoes}>
                 {
                     listRefeicoes.length > 0 ?
                         listRefeicoes.map(refeicao => {
