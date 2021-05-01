@@ -4,6 +4,7 @@ import { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { CardRefeicao } from '../components/Card';
 import { ctxt } from '../components/Context/index';
+import SubHeader from "../components/SubHeader";
 
 export default function Refeicoes() {
 
@@ -26,6 +27,9 @@ export default function Refeicoes() {
     return (
         <>
             <Header />
+            <SubHeader>
+                <span>Refeições</span>
+            </SubHeader>
             <div className={styles.containerRefeicoes}>
                 {
                     listRefeicoes.length > 0 ?
