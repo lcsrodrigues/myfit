@@ -7,7 +7,7 @@ export default function Protocolos() {
         <>
             <Header />
             <SubHeader>
-                <span>Protocolos</span>
+                <span>/Protocolos</span>
             </SubHeader>
             <h1 className={styles.h1}>Em contrução - Protocolos</h1>
         </>

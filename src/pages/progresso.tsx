@@ -7,7 +7,7 @@ export default function Progresso() {
         <>
             <Header />
             <SubHeader>
-                <span>Progresso</span>
+                <span>/Progresso</span>
             </SubHeader>
             <h1 className={styles.h1}>Em contrução - Progresso</h1>
         </>

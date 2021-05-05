@@ -8,7 +8,7 @@ export default function SubHeader({ children }) {
 
     return (
         <div className={styles.subHeaders}>
-            <span>Protocolo {profileName} - </span>
+            <span>Protocolo {profileName}</span>
             {children}
         </div>
     );

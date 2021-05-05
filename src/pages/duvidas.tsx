@@ -7,7 +7,7 @@ export default function Duvidas() {
         <>
             <Header />
             <SubHeader>
-                <span>Dúvidas</span>
+                <span>/Dúvidas</span>
             </SubHeader>
             <h1 className={styles.h1}>Em contrução - Dúvidas</h1>
         </>

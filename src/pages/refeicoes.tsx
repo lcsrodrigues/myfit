@@ -28,7 +28,7 @@ export default function Refeicoes() {
         <>
             <Header />
             <SubHeader>
-                <span>Refeições</span>
+                <span>/Refeições</span>
             </SubHeader>
             <div className={styles.containerRefeicoes}>
                 {

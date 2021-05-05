@@ -7,7 +7,7 @@ export default function Contato() {
         <>
             <Header />
             <SubHeader>
-                <span>Contato</span>
+                <span>/Contato</span>
             </SubHeader>
             <h1 className={styles.h1}>Em contrução - Contato</h1>
         </>
