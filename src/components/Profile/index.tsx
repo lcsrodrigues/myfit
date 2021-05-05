@@ -12,7 +12,7 @@ type iProfile = {
 
 export default function Profile({ id, name, age, gender, photo }: iProfile) {
 
-    const { setProfileID } = useContext(ctxt);
+    const { setProfileID, setProfileName } = useContext(ctxt);
     const [randomColor, setRandomColor] = useState("");
     useEffect(() => {
         function getRandomColor() {
@@ -30,6 +30,7 @@ export default function Profile({ id, name, age, gender, photo }: iProfile) {
 
     const eventHandler = () => {
         setProfileID(id);
+        setProfileName(name.split(" ")[0]);
     }
 
     return (
